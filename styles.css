@@ -1,0 +1,137 @@
+body {
+    background-image: url('./assets/Title-Image.png');
+    font-family: Roboto, Nunito Sans;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Added */
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#maid {
+    color: white;
+    width: 80%;
+}
+
+#img1 {
+    background-image: src('./assets/section 1.1.png');
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: -20px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons a {
+    padding: 1rem 1rem;
+    margin-right: 1rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buttons a.more-info-button {
+    background-color: rgb(182, 182, 182);
+    color: white;
+}
+
+h2 {
+    padding: 1rem 1rem;
+    margin-right: 1rem;
+    color: white;
+}
+
+h4 {
+    color: aliceblue;
+}
+
+footer {
+    font-family: 'Roboto', 'Nunito Sans';
+    border: 8px solid #222;
+    padding: 32px 320px;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.footer_row_2 {
+    display: flex;
+    color: #757575;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Changed */
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#style_heading {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .nav ul {
+        display: none;
+    }
+
+    .nav-right {
+        margin-left: auto;
+    }
+
+    .nav-icons a {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .buttons button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
